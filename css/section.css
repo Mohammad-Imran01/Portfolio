@@ -2,7 +2,7 @@
 /* ****************************** */
 /* *********  HEADER  *********** */
 /* ****************************** */
-header {
+.header {
   min-width: 100%;
   height: 7.2rem;
   background-color: var(--color-dark);
@@ -10,6 +10,16 @@ header {
   top: 0;
   left: 0;
   padding: 0 3rem;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  border-bottom: 1px solid var(--color-dark-grey);
+  z-index: 1000;
+  opacity: .96;
 }
 
 .navigation {
@@ -21,6 +31,15 @@ header {
 .logo-box,
 .logo-box span {
   font-size: 4.5rem;
+}
+
+.logo-box span {
+  font-weight: bold;
+  background: linear-gradient(45deg, #FF6B6B, #8A2BE2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari/WebKit browsers */
+  color: transparent;
 }
 
 .nav-items__nav-item a {
@@ -41,8 +60,42 @@ header {
 /* ****************************** */
 
 .section-home {
-  background-color: #164e63;
+  background-color: var(--color-dark);
   min-height: 100vh;
+}
+
+.change-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.change-text h3 {
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+}
+
+.change-text h3 .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}
+
+.change-text h3 .word .letter {
+  transform-origin: center center 25px;
+}
+
+.change-text h3 .word .letter.out {
+  transform: rotateX(90deg);
+  transition: .32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.change-text h3 .word .letter.in {
+  transition: .38s ease;
+}
+
+.change-text h3 .word .letter.behind {
+  transform: rotateX(-90deg);
 }
 
 .social-icons {
@@ -50,12 +103,12 @@ header {
 }
 
 .contact-box {
-  gap: 2rem;
-  padding-bottom: 8rem;
+  /* gap: 2rem; */
+  padding-bottom: 4.8rem;
 }
 
 .contact-box__text {
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .contact-box__btn {
@@ -139,7 +192,7 @@ img.composition__photo {
 /* ******* SECTION About  ******** */
 /* ****************************** */
 .section-about {
-  background-color: var(--color-light-grey);
+  /* background-color: var(--color-light-grey); */
   color: var(--color-dark-grey);
 }
 
@@ -152,7 +205,7 @@ img.composition__photo {
 }
 
 .section-about__img img {
-  width: 55rem;
+  width: 50rem;
   height: auto;
 }
 
@@ -163,7 +216,6 @@ img.composition__photo {
 .section-services {
   background: var(--color-dark);
 }
-
 .section-services__services {
   gap: 4rem;
 }
@@ -187,17 +239,25 @@ img.composition__photo {
   margin-bottom: 6rem;
 }
 
+.section-services__services p {
+  color: var(--color-grey);
+  font-size: 1.7rem;
+}
+
+.service-box:hover {
+  box-shadow: 0 0 1rem .2rem rgba(116, 216, 255, 0.6);
+}
 
 .service-box:nth-child(1):hover {
-  transform: translateY(-1rem) skew(-2deg, 2deg);
+  transform: translateY(-.3rem) skew(-1deg, 1deg);
 }
 
 .service-box:nth-child(3):hover {
-  transform: translateY(-1rem) skew(2deg, -2deg);
+  transform: translateY(-.3rem) skew(1deg, -1deg);
 }
 
 .service-box:nth-child(2):hover {
-  transform: translateY(1rem);
+  transform: translateY(.3rem);
 }
 
 .service-box__icon-div {
@@ -206,7 +266,7 @@ img.composition__photo {
   position: relative;
   outline: 3px solid var(--color-light);
   border-radius: 10rem;
-  outline-offset: -5px;
+  outline-offset: -1rem;
   box-shadow: var(--neon-box-shadow);
 }
 
@@ -224,9 +284,12 @@ img.composition__photo {
 /* ******************** */
 /* section skills */
 /* ******************** */
+#skills {
+  /* background-color: #F2ECBE; */
+}
 
 .skill-main {
-  color: #164e63;
+  color: var(--color-dark);
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -278,24 +341,24 @@ img.composition__photo {
   box-shadow: var(--neon-box-shadow);
 }
 
-.skill-bar .bar .html {
-  width: 72%;
-  animation: html .6s;
+.skill-bar .bar .cpp {
+  width: 85%;
+  animation: cpp .6s;
 }
 
-.skill-bar .bar .figma {
-  width: 90%;
-  animation: figma .6s;
+.skill-bar .bar .frontend {
+  width: 70%;
+  animation: frontend .6s;
 }
 
 .skill-bar .bar .javascript {
-  width: 80%;
+  width: 75%;
   animation: javascript .6s;
 }
 
-.skill-bar .bar .css {
+.skill-bar .bar .ml {
   width: 62%;
-  animation: css .6s;
+  animation: ml .6s;
 }
 
 /* skill-right */
@@ -338,14 +401,15 @@ img.composition__photo {
 
 .circle .points {
   width: 2px;
-  height: 10px;
-  background-color: var(--bg-color);
+  height: 1rem;
+  background-color: var(--color-grey);
   position: absolute;
   border-radius: 3px;
   transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
 }
 
 .points.marked {
+  background-color: var(--color-primary);
   animation: glow .04s linear forwards;
   animation-delay: calc(var(--i)*.05s);
 }
@@ -359,7 +423,9 @@ img.composition__photo {
   background-color: var(--color-dark);
   color: var(--color-grey);
 }
-
+.section-project .intro h5{
+  color: var(--color-light-grey);
+}
 .section-project .intro {
   min-width: 100%;
 }
@@ -378,28 +444,28 @@ img.composition__photo {
   font-size: 3.6rem;
 }
 
-.projects-navigation,
-.projects-navigation ul {
+/*  */
+.nav-project {
   min-width: 100%;
-  margin: 3rem auto 2rem;
-}
-
-.projects-navigation__link a {
-  font-size: 1.8rem;
-  color: var(--color-grey);
-  padding: 1rem;
-  border-bottom: 2px solid transparent;
-}
-
-.projects-navigation ul {
+  margin: 3rem auto;
   gap: 2rem;
 }
 
-.projects-navigation__link a:hover {
-  border-bottom: 1px solid var(--color-grey);
-
+.button {
+  background: 0;
+  border: 0;
+  font-size: 1.6rem;
+  color: var(--color-grey);
+  padding: 1rem;
+  border-bottom: 1px solid transparent;
 }
 
+.button:hover {
+  border-bottom: 1px solid var(--color-grey);
+}
+
+
+/*  */
 
 .projects {
   gap: 4rem;
@@ -412,16 +478,7 @@ img.composition__photo {
   border: 2px solid var(--color-light);
   box-shadow: 0 0 1rem var(--color-light);
   border-radius: 2rem;
-  background:
-    url('./images--main/1.jpg') center / cover no-repeat,
-    linear-gradient(to right, red, blue);
   position: relative;
-}
-
-.project:hover {
-  transition: all .3s;
-  transform: scale(1.05);
-  overflow: hidden;
 }
 
 .project::before {
@@ -431,15 +488,59 @@ img.composition__photo {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgb(22, 78, 99, 1), rgb(103, 232, 249, .2));
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(36, 36, 36, 0.799));
   border-radius: 1.6rem;
-  opacity: 0;
+  opacity: .4;
   transition: all .6s;
 }
 
 .project:hover::before {
   opacity: 1;
 }
+
+
+.project:hover {
+  transition: all .3s;
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
+.project--1 {
+  background:
+    url('../img/projects/omnifood-1.png') center / cover no-repeat,
+    linear-gradient(to right, rgb(34, 36, 37), rgb(1, 1, 1));
+}
+
+.project--2 {
+  background:
+    url('../img/projects/canvas-game-3.png') center / cover no-repeat,
+    linear-gradient(to right, rgb(34, 36, 37), rgb(1, 1, 1));
+}
+
+.project--3 {
+  background:
+    url('../img/projects/canvas-dot-2.png') center / cover no-repeat,
+    linear-gradient(to right, rgb(34, 36, 37), rgb(1, 1, 1));
+}
+
+.project--4 {
+  background:
+    url('../img/projects/insurely-2.png') center / cover no-repeat,
+    linear-gradient(to right, rgb(34, 36, 37), rgb(1, 1, 1));
+}
+
+.project--5 {
+  background:
+    url('../img/projects/penguin-6.jpg') center / cover no-repeat,
+    linear-gradient(to right, rgb(34, 36, 37), rgb(1, 1, 1));
+}
+
+.project--6 {
+  background:
+    url('../img/projects/Movie-recommender-5.jpg') center / cover no-repeat,
+    linear-gradient(to right, rgb(34, 36, 37), rgb(1, 1, 1));
+}
+
 
 
 .project-details {
@@ -464,8 +565,10 @@ img.composition__photo {
 .project-details__heading {
   margin: 2rem auto 0;
   min-width: 100%;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   text-align: center;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .project-details__text {
@@ -501,7 +604,7 @@ a.project-details__link {
 
 /* Contact us */
 .section-contact-us {
-  background-color: var(--color-grey);
+  /* background-color: var(--color-grey); */
 }
 
 .form {
@@ -510,7 +613,7 @@ a.project-details__link {
   background: linear-gradient(to left bottom,
       rgba(41, 46, 51, 0.7),
       rgba(11, 11, 11, 0.75) 80%),
-    url('./img/form-back.jpg') center/cover no-repeat;
+    url('./../img/form-back.jpg') center/cover no-repeat;
 
   position: relative;
   border-radius: 1.5rem;
@@ -527,7 +630,7 @@ a.project-details__link {
   border-radius: 3rem;
   width: 60%;
   padding: .5rem;
-  color: var(--color-grey);
+  color: var(--color-light-grey);
   font-size: 1.6rem;
   background-color: var(--color-dark);
   display: inline-block;
