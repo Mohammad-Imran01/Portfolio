@@ -3,394 +3,446 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+
+		<link rel="icon" href="img/programmer.png" type="image/x-icon" />
+
+		<title>Mohammad&nbsp;Imran</title>
 		<link
 			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 			rel="stylesheet" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
 			rel="stylesheet" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="typography.css" />
-		<link rel="stylesheet" href="section.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/typography.css" />
+		<link rel="stylesheet" href="css/animations.css" />
+		<link rel="stylesheet" href="css/section.css" />
 	</head>
 	<body>
-		<header class="flex">
+		<!-- header -->
+		<section class="flex header">
 			<nav class="flex navigation">
 				<div class="logo-box"><span>I</span>mran.</div>
 				<ul class="flex nav-items">
-					<li class="nav-items__nav-item"><a href="#">Home</a></li>
-					<li class="nav-items__nav-item"><a href="#">About</a></li>
-					<li class="nav-items__nav-item"><a href="#">Services</a></li>
-					<li class="nav-items__nav-item"><a href="#">Skills</a></li>
-					<li class="nav-items__nav-item"><a href="#">Portfolio</a></li>
-					<li class="nav-items__nav-item"><a href="#">Contact </a></li>
+					<li class="nav-items__nav-item">
+						<a class="head_links a_active" href="#">Home</a>
+					</li>
+					<li class="nav-items__nav-item">
+						<a class="head_links" href="#about">About</a>
+					</li>
+					<li class="nav-items__nav-item">
+						<a class="head_links" href="#services">Services</a>
+					</li>
+					<li class="nav-items__nav-item">
+						<a class="head_links" href="#skills">Skills</a>
+					</li>
+					<li class="nav-items__nav-item">
+						<a class="head_links" href="#projects">Projects</a>
+					</li>
+					<li class="nav-items__nav-item">
+						<a class="head_links" href="#contact-us">Contact </a>
+					</li>
 				</ul>
 			</nav>
-		</header>
-		<main>
-			<!------->
-			<!-- 1 -->
-			<section id="home" class="flex section section-home">
-				<div class="container grid grid--2">
-					<div class="flex-c section-home__text-div">
-						<h1 class="heading--1">Hi! I'm Mohammad Imran</h1>
-						<h3 class="heading--2">And I'm a Web Developer</h3>
-						<h5 class="paragraph">
-							Product Designer and Digital Creative Director working in design
-							field for 10 years so far.specialized in UI/UX, Branding and
-							digital designs.
-						</h5>
-						<div class="flex-c contact-box">
-							<div class="flex contact-box__text">
-								<div>
-									<p>Email</p>
-									<p>imranmbhd2412@gmail.com</p>
-								</div>
-								<div>
-									<p>Email</p>
-									<p>imranmbhd2412@gmail.com</p>
-								</div>
-							</div>
-							<div class="flex contact-box__btn">
-								<a href="#" class="btn btn--dark">Download CV</a>
-								<a href="#" class="btn btn--light">Hire me now</a>
-							</div>
-						</div>
+		</section>
+		<!-- ************************************* -->
+		<!------->
+		<!-- 1 -->
+		<section id="home" class="flex section section-home">
+			<div class="container grid grid--2">
+				<div class="flex-c section-home__text-div">
+					<h1 class="heading--1">Hi! I'm Mohammad Imran</h1>
 
-						<div class="flex social-icons">
-							<a href="#" class="flex btn btn--light"
-								><i class="bx bxl-facebook"></i
-							></a>
-							<a href="#" class="flex btn btn--light"
-								><i class="bx bxl-instagram"></i
-							></a>
-							<a href="#" class="flex btn btn--light"
-								><i class="bx bxl-twitter"></i
-							></a>
-							<a href="#" class="flex btn btn--light"
-								><i class="bx bxl-linkedin"></i
-							></a>
+					<div class="change-text">
+						<h3>And I'm a&nbsp;</h3>
+						<h3>
+							<span class="word">Web&nbsp;Designer</span>
+							<span class="word">C++&nbsp;developer</span>
+							<span class="word">Frontend&nbsp;Developer</span>
+							<span class="word">C++&nbsp;developer</span>
+							<span class="word">UX/UI&nbsp;developer</span>
+						</h3>
+					</div>
+
+					<h5 class="paragraph">
+						Highly proficient in C++ with expertise in Data Structures,
+						Algorithms, and OOP. A web developer, emphasizing compelling UI/UX
+						design. Passionate about Machine Learning and Databases.
+					</h5>
+					<div class="flex-c contact-box">
+						<div class="flex contact-box__text">
+							<div>
+								<p>Email</p>
+								<p class="paragraph">imranmbhd2412@gmail.com</p>
+							</div>
+							<div>
+								<p>LinkedIn</p>
+								<p class="paragraph">linkedin.com/in/mohdimran01</p>
+							</div>
+						</div>
+						<div class="flex contact-box__btn">
+							<a
+								href="https://github.com/Mohammad-Imran01/resume/blob/main/resumeImran.pdf"
+								class="btn btn--dark"
+								>Download CV</a
+							>
+							<a
+								href="https://api.whatsapp.com/send?phone=9931318235&text=Hello%20I'm%20interested%20in%20hiring%20you!"
+								class="btn btn--light"
+								>Call me now</a
+							>
 						</div>
 					</div>
-					<div class="flex section-home__photo-div composition">
-						<img
-							src="./img/main-3.jpg"
-							alt="Photo 1"
-							class="composition__photo composition__photo--p1" />
-						<img
-							src="./img/main-2.jpg"
-							alt="Photo 2"
-							class="composition__photo composition__photo--p2" />
-						<img
-							src="./img/main-1.jpg"
-							alt="Photo 3"
-							class="composition__photo composition__photo--p3" />
-					</div>
-				</div>
-			</section>
-			<!------->
-			<!-- 2 -->
-			<section id="about" class="flex section section-about">
-				<div class="container grid grid--1-to-3">
-					<div class="flex section-about__img">
-						<img src="./img/mian-computer.png" alt="About me" />
-					</div>
-					<div class="flex-c section-about__text">
-						<p class="heading--5">Let me introduce myself</p>
-						<h4 class="heading--3">About me</h4>
-						<h5 class="heading--4">A story of good</h5>
-						<p class="para-body">
-							A story of good Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Cupiditate veritatis quaerat sit? Esse quaerat nihil neque,
-							laudantium corporis tenetur dicta aut voluptas ducimus asperiores
-							sunt porro nam aspernatur minus velit?
-						</p>
-					</div>
-				</div>
-			</section>
-			<!------->
-			<!-- 3 -->
-			<section id="services" class="flex-c section section-services">
-				<div class="container">
-					<div class="flex-c intro">
-						<p class="light heading--5">Let me introduce myself</p>
-						<h4 class="light heading--3">About me</h4>
-					</div>
-					<div class="section-services__services flex grid grid--3">
-						<div class="flex-c service-box">
-							<div class="service-box__icon-div">
-								<i class="bx bxs-layer service-icon"></i>
-							</div>
-							<h5 class="heading--4">Graphic Designer</h5>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Distinctio ducimus iusto excepturi! Accusantium quisquam
-								officiis sed voluptatibus cum corporis libero.
-							</p>
-							<a href="#" class="btn btn--dark">Learn more</a>
-						</div>
-						<div class="flex-c service-box">
-							<div class="service-box__icon-div">
-								<i class="bx bxs-layer service-icon"></i>
-							</div>
-							<h5 class="heading--4">Graphic Designer</h5>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Distinctio ducimus iusto excepturi! Accusantium quisquam
-								officiis sed voluptatibus cum corporis libero.
-							</p>
-							<a href="#" class="btn btn--dark">Learn more</a>
-						</div>
-						<div class="flex-c service-box">
-							<div class="service-box__icon-div">
-								<i class="bx bxs-layer service-icon"></i>
-							</div>
-							<h5 class="heading--4">Graphic Designer</h5>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Distinctio ducimus iusto excepturi! Accusantium quisquam
-								officiis sed voluptatibus cum corporis libero.
-							</p>
-							<a href="#" class="btn btn--dark">Learn more</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!------->
-			<!-- 4 -->
-			<section itemref="skills" class="section section-skills">
-				<div class="skill-main container">
-					<div class="skill-left scroll-scale">
-						<h3>Technical Skills</h3>
-						<div class="skill-bar">
-							<div class="info">
-								<p>HTML</p>
-								<p>72%</p>
-							</div>
-							<div class="bar">
-								<span class="html"></span>
-							</div>
-						</div>
-						<div class="skill-bar">
-							<div class="info">
-								<p>Figma</p>
-								<p>90%</p>
-							</div>
-							<div class="bar">
-								<span class="figma"></span>
-							</div>
-						</div>
-						<div class="skill-bar">
-							<div class="info">
-								<p>JavaScript</p>
-								<p>80%</p>
-							</div>
-							<div class="bar">
-								<span class="javascript"></span>
-							</div>
-						</div>
-						<div class="skill-bar">
-							<div class="info">
-								<p>CSS</p>
-								<p>62%</p>
-							</div>
-							<div class="bar">
-								<span class="css"></span>
-							</div>
-						</div>
-					</div>
-					<!-- ----------------------------- -->
-					<div class="skill-right scroll-scale">
-						<h3>Professional Skills</h3>
-						<div class="professional">
-							<!--  -->
-							<div class="box">
-								<div class="circle" data-dots="55" data-percent="90"></div>
-								<div class="text">
-									<big>90%</big>
-									<small>Team Work</small>
-								</div>
-							</div>
-							<!--  -->
-							<div class="box">
-								<div class="circle" data-dots="55" data-percent="80"></div>
-								<div class="text">
-									<big>80%</big>
-									<small>Creativity</small>
-								</div>
-							</div>
-							<!--  -->
-							<div class="box">
-								<div class="circle" data-dots="55" data-percent="55"></div>
-								<div class="text">
-									<big>55%</big>
-									<small>Project management</small>
-								</div>
-							</div>
-							<!--  -->
-							<div class="box">
-								<div class="circle" data-dots="55" data-percent="70"></div>
-								<div class="text">
-									<big>70%</big>
-									<small>Communications</small>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--  -->
-			<!-- 5 -->
-			<section id="projects" class="section section-project">
-				<div class="container flex-c container-projects">
-					<div class="intro">
-						<p>What i will do for you</p>
-						<h5>Latest projects</h5>
-					</div>
-					<nav class="flex projects-navigation">
-						<ul class="flex">
-							<li class="projects-navigation__link"><a href="">All</a></li>
-							<li class="projects-navigation__link"><a href="">Product</a></li>
-							<li class="projects-navigation__link">
-								<a href="">Interacting</a>
-							</li>
-							<li class="projects-navigation__link"><a href="">App</a></li>
-						</ul>
-					</nav>
-					<div class="projects grid grid--3">
-						<div class="project project--1">
-							<div class="flex-c project-details">
-								<h2 class="project-details__heading">Graphic Design</h2>
-								<p class="project-details__text">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Eveniet vel itaque ipsa nesciunt commodi aspernatur excepturi
-									fuga, quam dolorum, voluptatibus libero sapiente pariatur nam
-									omnis?
-								</p>
-								<div class="flex project-link-container">
-									<a href="#" class="project-details__link"
-										><i class="bx bx-link-external"></i
-									></a>
-								</div>
-							</div>
-						</div>
-						<div class="project project--1">
-							<div class="flex-c project-details">
-								<h2 class="project-details__heading">Graphic Design</h2>
-								<p class="project-details__text">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Eveniet vel itaque ipsa nesciunt commodi aspernatur excepturi
-									fuga, quam dolorum, voluptatibus libero sapiente pariatur nam
-									omnis?
-								</p>
-								<div class="flex project-link-container">
-									<a href="#" class="project-details__link"
-										><i class="bx bx-link-external"></i
-									></a>
-								</div>
-							</div>
-						</div>
-						<div class="project project--1">
-							<div class="flex-c project-details">
-								<h2 class="project-details__heading">Graphic Design</h2>
-								<p class="project-details__text">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Eveniet vel itaque ipsa nesciunt commodi aspernatur excepturi
-									fuga, quam dolorum, voluptatibus libero sapiente pariatur nam
-									omnis?
-								</p>
-								<div class="flex project-link-container">
-									<a href="#" class="project-details__link"
-										><i class="bx bx-link-external"></i
-									></a>
-								</div>
-							</div>
-						</div>
-						<div class="project project--1">
-							<div class="flex-c project-details">
-								<h2 class="project-details__heading">Graphic Design</h2>
-								<p class="project-details__text">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Eveniet vel itaque ipsa nesciunt commodi aspernatur excepturi
-									fuga, quam dolorum, voluptatibus libero sapiente pariatur nam
-									omnis?
-								</p>
-								<div class="flex project-link-container">
-									<a href="#" class="project-details__link"
-										><i class="bx bx-link-external"></i
-									></a>
-								</div>
-							</div>
-						</div>
-						<div class="project project--1">
-							<div class="flex-c project-details">
-								<h2 class="project-details__heading">Graphic Design</h2>
-								<p class="project-details__text">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Eveniet vel itaque ipsa nesciunt commodi aspernatur excepturi
-									fuga, quam dolorum, voluptatibus libero sapiente pariatur nam
-									omnis?
-								</p>
-								<div class="flex project-link-container">
-									<a href="#" class="project-details__link"
-										><i class="bx bx-link-external"></i
-									></a>
-								</div>
-							</div>
-						</div>
-						<div class="project project--1">
-							<div class="flex-c project-details">
-								<h2 class="project-details__heading">Graphic Design</h2>
-								<p class="project-details__text">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Eveniet vel itaque ipsa nesciunt commodi aspernatur excepturi
-									fuga, quam dolorum, voluptatibus libero sapiente pariatur nam
-									omnis?
-								</p>
-								<div class="flex project-link-container">
-									<a href="#" class="project-details__link"
-										><i class="bx bx-link-external"></i
-									></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--  -->
-			<!-- 6 -->
-			<section id="contact-us" class="flex section section-contact-us">
-				<div class="container container-form">
-					<form action="#" class="flex-c form">
-						<input class="name" type="text" placeholder="Yourname" />
-						<input class="email" type="email" placeholder="Email" />
-						<input type="text" class="address" placeholder="Address" />
-						<input type="number" class="phone" placeholder="Phone" />
-						<textarea
-							name="Your query"
-							placeholder="Your text goes here..."
-							id=""
-							cols="30"
-							rows="10"></textarea>
-						<a type="submit" href="#" class="btn btn btn--light">
-							Send message
-						</a>
-					</form>
-				</div>
-			</section>
-			<!--  -->
-			<!-- 8 -->
-			<footer>
-				<section class="section section-footer">
-					<div class="container container-footer flex">
-						Copyright &copy; by Imran || All right reserved
-						<a href="#" class="flex btn btn--light"
-							><i class="bx bx-up-arrow-alt"></i
+
+					<div class="flex social-icons">
+						<!-- linkedin -->
+						<a
+							href="https://www.linkedin.com/in/mohdimran01/"
+							class="flex btn btn--light"
+							><i class="bx bxl-linkedin"></i
+						></a>
+						<!-- whatsapp -->
+						<a
+							href="https://api.whatsapp.com/send?phone=9931318235"
+							class="flex btn btn--light"
+							><i class="bx bxl-whatsapp"></i
+						></a>
+						<!-- github -->
+						<a
+							href="https://github.com/Mohammad-Imran01"
+							class="flex btn btn--light"
+							><i class="bx bxl-github"></i
+						></a>
+						<!-- leetcode -->
+						<a
+							href="https://leetcode.com/imranmbhd2412/"
+							class="flex btn btn--light"
+							><i class="bx bx-code-alt"></i
 						></a>
 					</div>
-				</section>
-			</footer>
-		</main>
+				</div>
+				<div class="flex section-home__photo-div composition">
+					<img
+						src="./img/main-1.jpg"
+						alt="Photo 1"
+						class="composition__photo composition__photo--p1" />
+					<img
+						src="./img/main-2.jpg"
+						alt="Photo 2"
+						class="composition__photo composition__photo--p2" />
+					<img
+						src="./img/main-3.jpg"
+						alt="Photo 3"
+						class="composition__photo composition__photo--p3" />
+				</div>
+			</div>
+		</section>
+		<!-- ************************************* -->
+		<!------->
+		<!-- 2 -->
+		<section id="about" class="flex section section-about">
+			<div class="container grid grid--1-to-3">
+				<div class="flex section-about__img">
+					<img src="./img/mian-computer.png" alt="About me" />
+				</div>
+				<div class="flex-c section-about__text">
+					<p class="heading--5">Let me introduce myself</p>
+					<h4 class="heading--3">About me</h4>
+					<h5 class="heading--4">Fueled by Passion, Driven by Ambition</h5>
+					<p class="para-body">
+						From mastering C++ to diving into Machine Learning, I'm currently
+						honing my web development skills. Having completed multiple
+						projects, I'm dedicated to both improvement and showcasing my
+						abilities.
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- ************************************* -->
+		<!------->
+		<!-- 3 -->
+		<section id="services" class="flex-c section section-services">
+			<div class="container">
+				<div class="flex-c intro">
+					<p class="light heading--5">An overview of my main skills</p>
+					<h4 class="light heading--3">My skills</h4>
+				</div>
+				<!--  -->
+				<!-- skills overview -->
+				<div class="section-services__services flex grid grid--3">
+					<!--  box-1-->
+					<div class="flex-c service-box">
+						<div class="service-box__icon-div">
+							<i class="bx bxl-c-plus-plus service-icon"></i>
+						</div>
+						<h5 class="heading--4">C++ and DSA</h5>
+						<p>
+							Proficient in C++, DSA, and OOP, I've solved 400+ LeetCode
+							problems, attaining 5-star C++ coder status on HackerRank. Skilled
+							in crafting efficient, maintainable code for diverse challenges.
+						</p>
+						<a href="#" class="btn btn--dark">Learn more</a>
+					</div>
+
+					<!--  box-2-->
+					<div class="flex-c service-box">
+						<div class="service-box__icon-div">
+							<i class="bx bx-globe service-icon"></i>
+						</div>
+						<h5 class="heading--4">Frontend developer</h5>
+						<p>
+							Specializing in HTML, CSS, and JavaScript, I'm a skilled UI/UX
+							developer. I've designed responsive frontend apps, crafted games
+							using HTML CANVAS, showcasing creativity in web development.
+						</p>
+						<a href="#" class="btn btn--dark">Learn more</a>
+					</div>
+
+					<!--  box-3-->
+					<div class="flex-c service-box">
+						<div class="service-box__icon-div">
+							<i class="bx bx-data service-icon"></i>
+						</div>
+						<h5 class="heading--4">AI and Databases</h5>
+						<p>
+							Proficient in Machine Learning, I've built models and completed
+							diverse courses. My SQL skills shine through solving 100+ queries
+							on platforms like LeetCode and HackerRank, highlighting a
+							well-rounded expertise.
+						</p>
+						<a href="#" class="btn btn--dark">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ************************************* -->
+		<!------->
+		<!-- 4 -->
+		<section id="skills" class="section section-skills">
+			<div class="skill-main container">
+				<div class="skill-left scroll-scale">
+					<h3>Technical Skills</h3>
+					<div class="skill-bar">
+						<div class="info">
+							<p>C++</p>
+							<p>85%</p>
+						</div>
+						<div class="bar">
+							<span class="html cpp"></span>
+						</div>
+					</div>
+					<div class="skill-bar">
+						<div class="info">
+							<p>Frontend and UI/UX</p>
+							<p>70%</p>
+						</div>
+						<div class="bar">
+							<span class="figma frontend"></span>
+						</div>
+					</div>
+					<div class="skill-bar">
+						<div class="info">
+							<p>JavaScript/Python</p>
+							<p>75%</p>
+						</div>
+						<div class="bar">
+							<span class="javascript"></span>
+						</div>
+					</div>
+					<div class="skill-bar">
+						<div class="info">
+							<p>ML and Databases</p>
+							<p>58%</p>
+						</div>
+						<div class="bar">
+							<span class="ml"></span>
+						</div>
+					</div>
+				</div>
+				<!-- ----------------------------- -->
+				<div class="skill-right scroll-scale">
+					<h3>Professional Skills</h3>
+					<div class="professional">
+						<!-- 1 -->
+						<div class="box">
+							<div class="circle" data-dots="55" data-percent="85"></div>
+							<div class="text">
+								<big>85%</big>
+								<small>Team Work</small>
+							</div>
+						</div>
+						<!-- 2 -->
+						<div class="box">
+							<div class="circle" data-dots="55" data-percent="75"></div>
+							<div class="text">
+								<big>75%</big>
+								<small>Creativity</small>
+							</div>
+						</div>
+						<!-- 3 -->
+						<div class="box">
+							<div class="circle" data-dots="55" data-percent="65"></div>
+							<div class="text">
+								<big>65%</big>
+								<small>Problem Solving</small>
+							</div>
+						</div>
+						<!-- 4 -->
+						<div class="box">
+							<div class="circle" data-dots="55" data-percent="70"></div>
+							<div class="text">
+								<big>70%</big>
+								<small>Communications</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ************************************* -->
+		<!--  -->
+		<!-- 5 -->
+		<section id="projects" class="section section-project">
+			<div class="container flex-c container-projects">
+				<div class="intro">
+					<p>What project i have worked</p>
+					<h5>Latest projects</h5>
+				</div>
+				<div class="flex nav-project filter-buttons">
+					<button class="button" data-filter="all">All</button>
+					<button class="button" data-filter=".product">Web App</button>
+					<button class="button" data-filter=".inter">Canvas</button>
+					<button class="button" data-filter=".web">Machine Learning</button>
+				</div>
+
+				<div class="projects grid grid--3">
+					<div class="project project--1 mix product">
+						<div class="flex-c project-details">
+							<h2 class="project-details__heading">Omnifood App</h2>
+							<p class="project-details__text">
+								Omnifood application, a responsive and interactive web
+								application that allows users to explore and order delicious
+								meals online.
+							</p>
+							<div class="flex project-link-container">
+								<a href="#" class="project-details__link"
+									><i class="bx bx-link-external"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="project project--2 mix inter">
+						<div class="flex-c project-details">
+							<h2 class="project-details__heading">Samurai Fight</h2>
+							<p class="project-details__text">
+								Engaging gameplay with HTML5 canvas, CSS and JavaScript.
+								Real-time multiplayer action for endless fun. Compete against
+								real player. Design that works seamlessly on all Computer.
+							</p>
+							<div class="flex project-link-container">
+								<a href="#" class="project-details__link"
+									><i class="bx bx-link-external"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="project project--3 mix inter">
+						<div class="flex-c project-details">
+							<h2 class="project-details__heading">Effect with hover</h2>
+							<p class="project-details__text">
+								This is a simple canvas-based project that showcases interactive
+								effects.
+							</p>
+							<div class="flex project-link-container">
+								<a href="#" class="project-details__link"
+									><i class="bx bx-link-external"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="project project--4 mix product">
+						<div class="flex-c project-details">
+							<h2 class="project-details__heading">
+								Insurely - Frontend Replica
+							</h2>
+							<p class="project-details__text">
+								The Insurely Digital Insurance Sales frontend replica project
+								aims to replicate the frontend part of the Insurely Digital
+								Insurance Sales page.
+							</p>
+							<div class="flex project-link-container">
+								<a href="#" class="project-details__link"
+									><i class="bx bx-link-external"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="project project--5 mix web">
+						<div class="flex-c project-details">
+							<h2 class="project-details__heading">Penguin Classification</h2>
+							<p class="project-details__text">
+								A web app using strealit, Predicts the species of penguins as a
+								function of their input parameters.
+							</p>
+							<div class="flex project-link-container">
+								<a href="#" class="project-details__link"
+									><i class="bx bx-link-external"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="project project--6 mix web">
+						<div class="flex-c project-details">
+							<h2 class="project-details__heading">Movie recommender</h2>
+							<p class="project-details__text">
+								This web app shows 5 recommended movies based on the user search
+								The web app was built in Python using strealit.
+							</p>
+							<div class="flex project-link-container">
+								<a href="#" class="project-details__link"
+									><i class="bx bx-link-external"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ************************************* -->
+		<!--  -->
+		<!-- 6 -->
+		<section id="contact-us" class="flex section section-contact-us">
+			<div class="container container-form">
+				<form action="#" class="flex-c form">
+					<input class="name" type="text" placeholder="Yourname" />
+					<input class="email" type="email" placeholder="Email" />
+					<input type="text" class="address" placeholder="Address" />
+					<input type="number" class="phone" placeholder="Phone" />
+					<textarea
+						name="Your query"
+						placeholder="Your text goes here..."
+						id=""
+						cols="30"
+						rows="10"></textarea>
+					<a type="submit" href="#" class="btn btn btn--light">
+						Send message
+					</a>
+				</form>
+			</div>
+		</section>
+		<!-- ************************************* -->
+		<!--  -->
+		<!-- 8 -->
+		<section id="footer" class="section section-footer">
+			<div class="container container-footer flex">
+				Copyright &copy; by Imran || All right reserved
+				<a href="#" class="flex btn btn--light"
+					><i class="bx bx-up-arrow-alt"></i
+				></a>
+			</div>
+		</section>
+
+		<script src="js/mixitup.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>

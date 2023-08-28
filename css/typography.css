@@ -5,6 +5,12 @@
 }
 
 .heading--1 {
+  font-weight: bold;
+  background: linear-gradient(65deg, #ff6b6bcf, #892be2ce);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari/WebKit browsers */
+  color: transparent;
   font-size: 4.5rem;
 }
 
@@ -35,10 +41,9 @@
 }
 
 .light.heading--5 {
-  color: var(--color-light-grey);
+  color: var(--color-grey)
 }
 
 .light.heading--3 {
   color: var(--color-light-grey);
 }
-

@@ -24,9 +24,11 @@
   --color-grey: #bdbdbd;
   --color-dark-grey: #292e33;
 
-  --color-dark: #164e63;
+  /* --color-dark: #164e63;*/
+  --color-dark: #040D12;
   --color-primary: #06b6d4;
-  --color-light: #67e8f9;
+  /* --color-light: #67e8f9; */
+  --color-light: #93B1A6;
 
   --width-container: 114rem;
   --neon-box-shadow: 0 0 0.5rem var(--color-dark);
@@ -58,6 +60,10 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
+}
+
+.a_active {
+  color: var(--color-light) !important;
 }
 
 span {
@@ -122,14 +128,6 @@ h3 {
   z-index: 1;
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-}
-
-.btn:active {
-  transform: translateY(0);
-}
-
 .btn::before {
   content: "";
   position: absolute;
@@ -192,3 +190,17 @@ h3 {
 
 /* section skills ------------------------------- */
 /* ****************** */
+
+::-webkit-scrollbar {
+  height: 0;
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-light);
+  border-radius: 5rem;
+}
