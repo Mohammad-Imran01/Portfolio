@@ -62,13 +62,14 @@
 
 @keyframes glow {
   0% {
-    background: var(--color-dark);
+    background: inherit;
     box-shadow: none;
   }
 
   100% {
-    background: var(--color-light-grey);
+    background: var(--color-primary);
     box-shadow: var(--neon-box-shadow);
+    box-shadow: 0 0 5px 0px rgba(82, 193, 241, 0.811);
   }
 }
 
