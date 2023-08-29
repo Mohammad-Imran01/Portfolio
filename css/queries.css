@@ -56,14 +56,24 @@
     font-size: 55%;
   }
 
+  .nav-items__nav-item a {
+    font-size: 1.8rem;
+  }
+
 }
 
 /* ************************ */
 /* **********((1000))****** */
 /* ************************ */
 @media (max-width:64rem) {
+
   html {
     font-size: 53%;
+  }
+
+  .flex.btn.btn--light.bottom-btn {
+
+    text-align: center;
   }
 
   div.composition {
@@ -196,7 +206,51 @@
 /* ************************ */
 /* **********((848))****** */
 /* ************************ */
+/* custom header here */
 @media (max-width:55rem) {
+  /*  */
+
+  .active .open {
+    z-index: 100000;
+    font-size: 3.5rem;
+    display: block;
+  }
+
+  .active .close {
+    z-index: 100000;
+    font-size: 3.5rem;
+  }
+
+  .active .nav-items {
+
+    transform: translateY(-200%);
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5rem 0;
+    font-size: 2rem;
+    flex-direction: column;
+    min-width: 100%;
+    background-color: var(--color-dark);
+    z-index: 500;
+    transition: all .5s;
+  }
+
+  .active .nav-items .nav-items__nav-item {
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    left: 50%;
+    text-align: center;
+  }
+
+  .active .nav-items .nav-items__nav-item a {
+    min-width: 100%;
+  }
+
+  /*  */
   .nav-project {
     padding: 0;
     margin: 2rem 0 1.5rem;
@@ -349,6 +403,7 @@
   html {
     font-size: 45%;
   }
+
 
   :root {
     --width-container: 55rem;

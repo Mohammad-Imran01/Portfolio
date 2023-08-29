@@ -2,6 +2,7 @@
   color: var(--color-grey);
   font-size: var(--font-sm);
   line-height: 1.6;
+  display: inline-block;
 }
 
 .heading--1 {

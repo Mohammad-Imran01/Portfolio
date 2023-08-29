@@ -128,6 +128,7 @@
 .contact-box__btn {
   min-width: 100%;
   gap: 3rem;
+  justify-content: flex-start;
 }
 
 .social-icons .btn {
@@ -623,8 +624,7 @@ section.section-portfolio {
   justify-content: space-between;
 }
 
-.container-footer a {
+.flex.btn.btn--light.bottom-btn {
   height: 4rem;
   width: 4rem;
-  text-align: center;
 }

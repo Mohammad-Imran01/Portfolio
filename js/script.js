@@ -105,12 +105,18 @@ const navItems = document.querySelector(".nav-items");
 open.addEventListener("click", () => {
 	open.style.display = "none";
 	close.style.display = "block";
-	console.log("png changed");
 	navItems.style.transform = `translateY(0%)`;
 });
 close.addEventListener("click", () => {
 	close.style.display = "none";
 	open.style.display = "block";
-	console.log("png changed");
 	navItems.style.transform = `translateY(-200%)`;
+});
+const navLinks = document.querySelectorAll(".nav-items__nav-item");
+navLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		close.style.display = "none";
+		open.style.display = "block";
+		navItems.style.transform = `translateY(-200%)`;
+	});
 });
