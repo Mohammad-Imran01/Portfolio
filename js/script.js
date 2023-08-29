@@ -85,11 +85,38 @@ circles.forEach((elem) => {
 		}
 	}
 	elem.innerHTML = points;
-	console.log('updated');
+	console.log("updated");
 });
 
 // ******************************
 // portfolio gallery ///////////
 // ******************************
 // ******************************
-let mixer = mixitup(".projects");
+let mixer = mixitup(".port-container");
+
+// ******************************
+// portfolio navigation ///////////
+// ******************************
+// ******************************
+
+const open = document.querySelector(".open");
+const close = document.querySelector(".close");
+const navItems = document.querySelector(".nav-items");
+open.addEventListener("click", () => {
+	open.style.display = "none";
+	close.style.display = "block";
+	navItems.style.transform = `translateY(0%)`;
+});
+close.addEventListener("click", () => {
+	close.style.display = "none";
+	open.style.display = "block";
+	navItems.style.transform = `translateY(-200%)`;
+});
+const navLinks = document.querySelectorAll(".nav-items__nav-item");
+navLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		close.style.display = "none";
+		open.style.display = "block";
+		navItems.style.transform = `translateY(-200%)`;
+	});
+});
