@@ -129,3 +129,14 @@ navLinks.forEach((link) => {
 		}
 	});
 });
+window.addEventListener("click", (e) => {
+	// console.log(e.target)
+	if (
+		isOpen &&
+		!e.target.classList.contains("navigation") &&
+		!e.target.classList.contains("open")
+	) {
+		closeNav();
+		isOpen = false;
+	}
+});
