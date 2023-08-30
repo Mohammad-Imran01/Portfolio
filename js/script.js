@@ -137,6 +137,6 @@ window.addEventListener("click", (e) => {
 		!e.target.classList.contains("open")
 	) {
 		closeNav();
-		isOpen = false;
+		isOpen = false;s
 	}
 });
