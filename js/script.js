@@ -98,25 +98,34 @@ let mixer = mixitup(".port-container");
 // portfolio navigation ///////////
 // ******************************
 // ******************************
-
 const open = document.querySelector(".open");
 const close = document.querySelector(".close");
 const navItems = document.querySelector(".nav-items");
-open.addEventListener("click", () => {
-	open.style.display = "none";
-	close.style.display = "block";
-	navItems.style.transform = `translateY(0%)`;
-});
-close.addEventListener("click", () => {
+let isOpen = false;
+function closeNav() {
 	close.style.display = "none";
 	open.style.display = "block";
 	navItems.style.transform = `translateY(-200%)`;
+}
+function openNav() {
+	open.style.display = "none";
+	close.style.display = "block";
+	navItems.style.transform = `translateY(0%)`;
+}
+open.addEventListener("click", () => {
+	openNav();
+	isOpen = true;
+});
+close.addEventListener("click", () => {
+	closeNav();
+	isOpen = false;
 });
 const navLinks = document.querySelectorAll(".nav-items__nav-item");
 navLinks.forEach((link) => {
 	link.addEventListener("click", () => {
-		close.style.display = "none";
-		open.style.display = "block";
-		navItems.style.transform = `translateY(-200%)`;
+		if (isOpen) {
+			closeNav();
+			isOpen = false;
+		}
 	});
 });
