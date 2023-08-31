@@ -9,7 +9,7 @@
   }
 
   html {
-    font-size: 59%;
+    font-size: 61%;
   }
 
   .composition__photo {
@@ -53,7 +53,7 @@
 /* ************************ */
 @media (max-width:70rem) {
   html {
-    font-size: 55%;
+    font-size: 59%;
   }
 
   .nav-items__nav-item a {
@@ -68,7 +68,7 @@
 @media (max-width:64rem) {
 
   html {
-    font-size: 53%;
+    font-size: 57%;
   }
 
   .flex.btn.btn--light.bottom-btn {
@@ -137,11 +137,6 @@
   .contact-box__btn {
     justify-content: center;
     align-items: center;
-  }
-
-  .composition {
-    height: 25rem;
-    width: 100%;
   }
 
   .composition__photo {
@@ -402,7 +397,7 @@
 /* ************************ */
 @media (max-width:42rem) {
   html {
-    font-size: 45%;
+    font-size: 55%;
   }
 
 
@@ -432,7 +427,7 @@
 /* ************************ */
 @media (max-width:35rem) {
   html {
-    font-size: 48%;
+    font-size: 53%;
   }
 
   .composition__photo--p1 {
@@ -472,29 +467,40 @@
 /* ************************ */
 @media (max-width:26rem) {
   html {
-    font-size: 44%;
+    font-size: 51%;
   }
 
+  h1.heading--1 {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
 
+  div.composition {
+    width: 100%;
+    height: 40rem;
+  }
+
+  .composition__photo {
+    max-width: 25rem;
+    height: 20rem;
+  }
 
   .composition__photo--p1 {
     top: 0;
-    left: 0;
+    left: 5%;
   }
 
   .composition__photo--p2 {
-    top: 0;
-    left: 40%;
+    top: 20%;
+    left: 30%;
   }
 
   .composition__photo--p3 {
-    bottom: 0;
-    left: 20%;
+    bottom: 0%;
+    left: 15%;
   }
 
-  :root {
-    --width-container: 42rem;
-  }
+
 
   .contact-box {
     gap: 4rem;
@@ -533,7 +539,11 @@
 /* ************************ */
 @media (max-width:22rem) {
   html {
-    font-size: 38%;
+    font-size: 48%;
+  }
+
+  .composition__photo {
+    max-width: 25rem;
   }
 
   .form {
@@ -553,38 +563,4 @@
   .professional {
     grid-template-columns: 1fr;
   }
-}
-
-/* ************************ */
-/* **********((4app 300))****** */
-/* ************************ */
-@media (max-width:18rem) {
-  html {
-    font-size: 33%;
-  }
-
-  :root {
-    --width-container: 34rem;
-  }
-
-  .heading--1 {
-    line-height: 1.2;
-    margin-bottom: .5rem;
-  }
-
-  .composition__photo--p1 {
-    top: 0;
-    left: 0;
-  }
-
-  .composition__photo--p2 {
-    top: 0;
-    left: 30%;
-  }
-
-  .composition__photo--p3 {
-    bottom: 0;
-    left: 20%;
-  }
-
 }
