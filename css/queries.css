@@ -8,9 +8,9 @@
     --width-container: 105rem;
   }
 
-  html {
+  /* html {
     font-size: 61%;
-  }
+  } */
 
   .composition__photo {
     width: 32rem;
@@ -52,9 +52,9 @@
 /* **********((1120))****** */
 /* ************************ */
 @media (max-width:70rem) {
-  html {
+  /* html {
     font-size: 59%;
-  }
+  } */
 
   .nav-items__nav-item a {
     font-size: 1.8rem;
@@ -67,9 +67,9 @@
 /* ************************ */
 @media (max-width:64rem) {
 
-  html {
+  /* html {
     font-size: 57%;
-  }
+  } */
 
   .flex.btn.btn--light.bottom-btn {
 
@@ -396,9 +396,9 @@
 /* **********((560))****** */
 /* ************************ */
 @media (max-width:42rem) {
-  html {
+  /* html {
     font-size: 55%;
-  }
+  } */
 
 
   :root {
@@ -427,7 +427,7 @@
 /* ************************ */
 @media (max-width:35rem) {
   html {
-    font-size: 53%;
+    font-size: 58%;
   }
 
   .composition__photo--p1 {
@@ -465,14 +465,21 @@
 /* ************************ */
 /* **********((416))****** */
 /* ************************ */
-@media (max-width:26rem) {
-  html {
+@media (max-width:29rem) {
+  /* html {
     font-size: 51%;
-  }
+  } */
 
   h1.heading--1 {
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  div.change-text h3 {
+    font-size: 2rem;
+  }
+
+  div.change-text {
+    /* margin-left: 1rem; */
   }
 
   div.composition {
@@ -538,9 +545,9 @@
 /* **********((4app 350))****** */
 /* ************************ */
 @media (max-width:22rem) {
-  html {
+  /* html {
     font-size: 48%;
-  }
+  } */
 
   .composition__photo {
     max-width: 25rem;
