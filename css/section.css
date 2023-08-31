@@ -169,7 +169,6 @@
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   z-index: 10;
   transition: all 0.2s;
-  opacity: .95;
 }
 
 .composition__photo:hover {
@@ -556,7 +555,7 @@ section.section-portfolio {
 
 .form {
   padding: 4rem 0;
-  width: 100rem;
+  width: calc(var(--width-container)*90/100);
   background: linear-gradient(to left bottom,
       rgba(41, 46, 51, 0.7),
       rgba(11, 11, 11, 0.75) 80%),
@@ -628,6 +627,7 @@ section.section-portfolio {
   height: 4rem;
   width: 4rem;
 }
-.boko-boko{
+
+.boko-boko {
   display: none;
 }
