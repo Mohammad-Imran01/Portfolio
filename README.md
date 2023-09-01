@@ -34,7 +34,7 @@ I have mentioned many of my projects in the websites. Go to the Projects section
 
 ## Skills
 
-This section highlight my Skills and intrerest
+This section highlight my Skills and interest
 - C++
 - HTML5
 - CSS3
