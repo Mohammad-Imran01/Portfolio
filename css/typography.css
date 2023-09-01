@@ -3,6 +3,7 @@
   font-size: var(--font-sm);
   line-height: 1.6;
   display: inline-block;
+  font-weight: normal;
 }
 
 .heading--1 {
@@ -32,16 +33,18 @@
 .heading--4 {
   color: var(--color-primary);
   font-weight: 300;
-  font-size: 3.2rem;
+  font-size: 2.6rem;
 }
 
 .para-body {
-  font-size: 2.4;
+  font-size: 2rem;
+  line-height: 1.5;
   font-weight: 300;
   color: var(--color-dark);
 }
 
 .light.heading--5 {
+  font-weight: normal;
   color: var(--color-grey)
 }
 
