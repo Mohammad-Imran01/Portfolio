@@ -3,7 +3,8 @@
 
 **Screenshot:**
 
-![Screenshot](portfolio.img)
+![Screenshot](Portfolio.png)
+
 This repository serves as a central hub for the personal portfolio and showcases development skills. Feel free to explore and learn more about my work and interests.
 
 ## Sections
