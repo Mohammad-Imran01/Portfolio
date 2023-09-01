@@ -3,16 +3,16 @@
 This repository serves as a central hub for the personal portfolio and showcases development skills. Feel free to explore and learn more about my work and interests.
 
 ## Sections
-- [Demo](#demo)
+- [Visit](#visit)
 - [About Me](#about-me)
 - [Projects](#projects)
 - [Skills](#skills)
 - [Contact](#contact)
 - [License](#license)
 
-## Demo
+## Visit
 
-To see the live demo, visit: [https://imran-01.netlify.app](https://imran-01.netlify.app)
+Click the link to visit the website: [https://imran-01.netlify.app](https://imran-01.netlify.app)
 
 ## About Me
 
