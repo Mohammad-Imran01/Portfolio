@@ -43,11 +43,20 @@
   color: var(--color-dark);
 }
 
+p.text-dark {
+  color: var(--color-dark);
+
+}
+
+.text-centre {
+  text-align: center;
+}
+
 .light.heading--5 {
   font-weight: normal;
   color: var(--color-grey)
 }
 
 .light.heading--3 {
-  color: var(--color-light-grey);
+  color: var(--color-grey);
 }
