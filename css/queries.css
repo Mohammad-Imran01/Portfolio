@@ -7,6 +7,7 @@
     max-height: 100vh !important;
     overflow: scroll !important;
   }
+
   :root {
     --width-container: 105rem;
   }
@@ -88,6 +89,7 @@
   :root {
     --width-container: 70rem;
   }
+
   .about-box {
     text-align: center;
   }
@@ -318,7 +320,7 @@
 /* ************************ */
 @media (max-width:34em) {
   :root {
-    --width-container: 38rem;
+    --width-container: 40rem;
   }
 
   .logo-box,
@@ -363,31 +365,36 @@
     gap: 2rem;
   }
 
-  .composition {
-    height: 15rem;
-  }
 
-  img.composition__photo {
-    outline-offset: .5rem;
-    width: 20rem;
-  }
 
   .composition__photo:hover {
     outline: .3rem solid rgb(27, 27, 27);
     transform: scale(1.02) translateY(-0.5px);
   }
 
-  .composition {
-    height: 25rem;
+  img.composition__photo {
+    outline-offset: .5rem;
+    width: 28rem;
   }
 
-  .composition__photo {
-    width: 24rem;
+  .composition {
+    height: 40rem;
   }
+
 
   .composition__photo--p1 {
     top: 0;
-    left: 0%;
+    left: 10%;
+  }
+
+  .composition__photo--p2 {
+    top: 30%;
+    left: 25%;
+  }
+
+  .composition__photo--p3 {
+    bottom: 0;
+    left: 0;
   }
 
   /* about */
@@ -458,23 +465,20 @@
   }
 
   .composition {
-    height: 20rem;
+    height: 35rem;
   }
 
   img.composition__photo {
-    width: 18rem;
+    width: 26rem;
   }
 
   .composition__photo--p1 {
-    left: 0;
+    left: 5%;
   }
 
   .composition__photo--p2 {
-    left: 43%;
+    left: 23%;
   }
-
-  .composition__photo--p1 {}
-
 
   .form {
     width: 33rem;
@@ -499,6 +503,7 @@
     font-size: 53%;
   }
 }
+
 /* ************************ */
 /* **********((320px))****** */
 /* ************************ */
