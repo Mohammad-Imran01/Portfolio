@@ -31,6 +31,7 @@
     width: 85rem;
   }
 
+
 }
 
 /* ************************ */
@@ -43,6 +44,24 @@
 
   html {
     font-size: 59%;
+  }
+
+  .section-home__text-div {
+    gap: 1.6rem;
+  }
+
+  .composition__photo--p1 {
+    top: 10%;
+    left: 5%;
+  }
+
+  .composition__photo--p2 {
+    left: 27%;
+    top: 30%;
+  }
+
+  .composition__photo--p3 {
+    bottom: 15%;
   }
 
   .container:not(:last-child) {
@@ -332,11 +351,15 @@
     font-size: 3.2rem;
   }
 
+  .section-home__text-div {
+    gap: 1rem;
+  }
+
   .heading--1,
   .heading--3,
   h3.skill-head.heading--3 {
     font-size: 3rem;
-    line-height: 1;
+    line-height: 1.8;
     margin: 0;
 
   }
@@ -491,6 +514,10 @@
 
   .form textarea {
     margin-bottom: 3rem;
+  }
+
+  .container:last-child {
+    padding: 5rem 0;
   }
 
 }
