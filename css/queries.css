@@ -8,12 +8,16 @@
     overflow: scroll !important;
   }
 
+  img.composition__photo {
+    width: 30rem;
+  }
+
   :root {
     --width-container: 105rem;
   }
 
-  html {
-    font-size: 61%;
+  .heading--1 {
+    font-size: 4rem;
   }
 
   .contact-box {
@@ -51,8 +55,8 @@
   }
 
   .composition__photo--p1 {
-    top: 10%;
-    left: 5%;
+    top: 5%;
+    left: 10%;
   }
 
   .composition__photo--p2 {
@@ -82,7 +86,7 @@
   }
 
   .section-home .container {
-    gap: 2rem;
+    /* gap: 2rem; */
   }
 
   .home__text-detail {
@@ -91,8 +95,8 @@
 
   .contact-box__text,
   .contact-box__text a {
-    flex-direction: column;
-    gap: 1rem;
+    /* flex-direction: column; */
+    gap: 4rem;
     margin: 0;
   }
 
@@ -140,7 +144,7 @@
   }
 
   .active .close {
-    z-index: 100;
+    z-index: 1001;
     font-size: 4rem;
   }
 
@@ -185,7 +189,9 @@
   .home__text-detail {
     margin: 1rem 0;
   }
-
+  .change-text {
+    text-align-last: center;
+  }
   .section-home__text-div,
   .section-about__text,
   .contact-box__btn {
@@ -276,8 +282,8 @@
   .form input,
   .form textarea {
     width: 70%;
-    height: 2.5rem;
-    font-size: 1.2rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
   }
 
   .form textarea {
@@ -525,7 +531,7 @@
 /* ************************ */
 /* **********((352px))****** */
 /* ************************ */
-@media (max-width:22rem) {
+@media (max-width:22.7rem) {
   html {
     font-size: 53%;
   }
