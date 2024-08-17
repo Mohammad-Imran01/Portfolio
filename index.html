@@ -453,18 +453,19 @@
 		<!-- 6 -->
 		<section id="contact-us" class="flex section section-contact-us">
 			<div class="container container-form">
-				<form action="#" class="flex-c form">
-					<input class="name" type="text" placeholder="Yourname" />
-					<input class="email" type="email" placeholder="Email" />
-					<input type="text" class="address" placeholder="Address" />
-					<input type="number" class="phone" placeholder="Phone" />
+				<form action="https://api.web3forms.com/submit" method="POST" class="flex-c form">
+					 <input type="hidden" name="access_key" value="8c3f30b6-e919-47fe-8355-972eb4f03b2b">
+					<input class="name" type="text" name = "name" placeholder="Yourname" />
+					<input class="email" type="email" name = "email" placeholder="Email" />
+					<input type="text" class="address" name = "address" placeholder="Address" />
+					<input type="number" class="phone" name = "phone" placeholder="Phone" />
 					<textarea
 						name="Your query"
 						placeholder="Your text goes here..."
 						id=""
 						cols="30"
 						rows="10"></textarea>
-					<a type="submit" href="#" class="btn btn btn--light"> Do nothing </a>
+					<button type="submit" class="btn btn btn--light"> Submit </button>
 				</form>
 			</div>
 		</section>
