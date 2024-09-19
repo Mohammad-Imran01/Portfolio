@@ -458,8 +458,8 @@
 			<div class="container container-form">
 				<form action="https://api.web3forms.com/submit" method="POST" class="flex-c form">
 					 <input type="hidden" name="access_key" value="8c3f30b6-e919-47fe-8355-972eb4f03b2b">
-					<input class="name" type="text" name = "name" placeholder="Yourname" />
-					<input class="email" type="email" name = "email" placeholder="Email" />
+					<input class="name" type="text" name = "name" placeholder="Yourname" required/>
+					<input class="email" type="email" name = "email" placeholder="Email" required/>
 					<input type="text" class="address" name = "address" placeholder="Address" />
 					<input type="number" class="phone" name = "phone" placeholder="Phone" />
 					<textarea
@@ -467,7 +467,7 @@
 						placeholder="Your text goes here..."
 						id=""
 						cols="30"
-						rows="10"></textarea>
+						rows="10" required></textarea>
 					<button type="submit" class="btn btn btn--light"> Submit </button>
 				</form>
 			</div>
