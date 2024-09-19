@@ -493,6 +493,11 @@
     /* color: red; */
   }
 
+ .hide-head--4 h5 {
+ height: 0;
+visibility: hidden;
+}
+
   .composition {
     height: 35rem;
   }
@@ -535,6 +540,9 @@
   html {
     font-size: 53%;
   }
+    .change-text {
+    font-size: 1rem;
+  }
 }
 
 /* ************************ */
@@ -543,5 +551,8 @@
 @media (max-width:20rem) {
   html {
     font-size: 45%;
+  }
+  .change-text {
+    font-size: 1rem;
   }
 }

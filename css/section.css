@@ -85,7 +85,8 @@
 .change-text {
   font-size: 2.5rem;
   font-weight: 600;
-
+height: 0;
+visibility: hidden;
 }
 
 .change-text h3 {

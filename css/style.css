@@ -124,6 +124,7 @@ h3 {
 
 .grid--2 {
   grid-template-columns: repeat(2, 1fr);
+  /* border: 2px solid; */
 }
 
 .grid--3 {
