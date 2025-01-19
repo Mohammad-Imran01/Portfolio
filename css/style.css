@@ -10,6 +10,30 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.fixed-label {
+    position: fixed;
+    top: 80px; /* Moves it 80px below the top */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Adjusts position back to center */
+    background-color: rgba(255, 0, 0, 0.75); /* Red with reduced opacity */
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-label a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.fixed-label a:hover {
+    color: #ffcccb;
+}
 
 :root {
   /* size-font */
