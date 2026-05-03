@@ -49,9 +49,9 @@ Visit the website’s **Projects section** for details.
 
 ## 📬 Contact
 
-- 📄 Resume: https://drive.google.com/file/d/1ZN2x7OlE1FSAHaJxwyMex_NLjE38pG1l/view  
-- 📧 Email: iamimran037@gmail.com  
-- 💼 LinkedIn: https://www.linkedin.com/in/mohdimran01  
+- 📄 !(Resume)[https://drive.google.com/file/d/1ZN2x7OlE1FSAHaJxwyMex_NLjE38pG1l/view]  
+- 📧 !(Email)[iamimran037@gmail.com]  
+- 💼 !(LinkedIn)[https://www.linkedin.com/in/mohdimran01]  
 
 ---
 
