@@ -1,57 +1,60 @@
-# Welcome to Mohammad Imran's Personal Profile Repository!
-
-
-**Screenshot:**
+# Welcome to Mohammad Imran's Portfolio 👋
 
 ![Screenshot](Portfolio.png)
 
-This repository serves as a central hub for the personal portfolio and showcases development skills. Feel free to explore and learn more about my work and interests.
+This repository serves as a central hub for my personal portfolio, showcasing my work in **C++ systems, real-time applications, and software engineering projects**.
 
-## Sections
-- [Visit](#visit)
-- [About Me](#about-me)
-- [Projects](#projects)
-- [Skills](#skills)
-- [Contact](#contact)
-- [License](#license)
+---
 
-## Visit
+## 🔗 Visit
 
-Click the link to visit the website: [https://imran-01.netlify.app](https://imran-01.netlify.app)
+Explore my portfolio website here:  
+👉 https://imran-01.netlify.app
 
-## About Me
+---
 
-Information Technology graduate with a strong foundation in programming languages including C++, JavaScript, and Python. 
+## 👨‍💻 About Me
 
-Currently focused on:
-🌐 Crafting responsive and interactive websites with HTML, CSS, and JavaScript.
-🗄️ Exploring databases, with a special interest in MySQL and MongoDB.
+Software Engineer with ~3 years of experience building **high-performance applications using C++**.
 
-I'm also committed to:
-🔍 Problem-solving and mastering Data Structures using C++.
-📊 Leveraging Python for insightful Data Analysis and diving into Machine Learning.
+Currently working at **Autodesk (Fusion)**, contributing to large-scale systems, debugging complex issues, and improving application reliability.
 
-Open for opportunities to expand my skills and connect with fellow professionals who share my passion.
+Previously worked on **flight simulator software (AerX Labs)**, building real-time avionics systems involving multithreading and low-latency communication between software and hardware.
 
-## Projects
+I enjoy working on systems that require **performance, reliability, and deep debugging**.
 
-I have mentioned many of my projects in the websites. Go to the Projects section.
+---
 
-## Skills
+## 🚀 Projects
 
-This section highlight my Skills and interest
-- C++
-- HTML5
-- CSS3
-- JavaScript
-- Python
-- SQL
-- Web Development
-- Data Analysis
+Most of my projects are focused on:
+- C++ desktop applications  
+- Real-time data processing  
+- Networking (TCP/UDP) systems  
+- System-level tools and experiments  
 
-## Contact
+Visit the website’s **Projects section** for details.
 
-- (Resume)[#https://drive.google.com/file/d/1ZN2x7OlE1FSAHaJxwyMex_NLjE38pG1l/view?usp=drive_link]
-- (Email)[iamimran037@gmail.com]
-- (LinkedIn)[#https://www.linkedin.com/in/mohdimran01]
+---
 
+## 🛠️ Skills
+
+- **Languages:** C++, Python, JavaScript, SQL  
+- **Systems:** Multithreading, IPC, Real-time systems  
+- **Tools:** CMake, Git, GDB, Valgrind, Wireshark  
+- **Databases:** MongoDB, PostgreSQL  
+- **Other:** API development, debugging, performance optimization  
+
+---
+
+## 📬 Contact
+
+- 📄 Resume: https://drive.google.com/file/d/1ZN2x7OlE1FSAHaJxwyMex_NLjE38pG1l/view  
+- 📧 Email: iamimran037@gmail.com  
+- 💼 LinkedIn: https://www.linkedin.com/in/mohdimran01  
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
