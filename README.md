@@ -51,6 +51,7 @@ This section highlight my Skills and interest
 
 ## Contact
 
-- Email: [imranmbhd2412@gmail.com]
+- Resume:   [https://drive.google.com/drive/u/0/folders/1-jM8gJLEgf3Y9cA_MccrVcWXnl9jFMEN]
+- Email:    [iamimran037@gmail.com]
 - LinkedIn: [https://www.linkedin.com/in/mohdimran01]
 
